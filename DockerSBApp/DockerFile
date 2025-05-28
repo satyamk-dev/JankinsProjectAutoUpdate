@@ -1,3 +1,7 @@
 FROM kamaleshpradhan/tomcat-jdk17
-COPY target/ Docker-DockerSBApp.war
+
+# Copy the WAR file into the webapps directory of Tomcat
+COPY target/Docker-DockerSBApp.war /usr/local/tomcat/webapps/
+
+# Expose port 8080 for Tomcat
 EXPOSE 8080
