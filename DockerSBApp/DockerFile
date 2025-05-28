@@ -1,4 +1,4 @@
-FROM tomcat:10.1-jdk17-temurin
+FROM tomcat:10-jdk17
 
 # Copy WAR file into Tomcat's webapps directory
 COPY target/Docker-DockerSBApp.war /usr/local/tomcat/webapps/
